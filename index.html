@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4ebdd">
+  <title>Untuk Mama & Papa — Rumah Pertamaku</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">our little home <span>♡</span></a>
+    <button class="menu-toggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Navigasi utama">
+      <a class="active" href="index.html">Beranda</a>
+      <a href="kenangan.html">Kenangan</a>
+      <a href="untuk-mama.html">Untuk Mama</a>
+      <a href="untuk-papa.html">Untuk Papa</a>
+      <a href="untuk-kalian.html">Untuk Kalian</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero paper-texture">
+      <p class="eyebrow">A LITTLE LETTER FROM YOUR DAUGHTER</p>
+      <div class="floral-mark" aria-hidden="true">✿</div>
+      <p class="handwritten">Untuk dua rumah pertamaku,</p>
+      <h1>Mama <span class="ampersand">&</span><br>Papa</h1>
+      <p class="intro">Ada hal-hal yang terlalu berharga untuk hanya disimpan dalam ingatan. Jadi, kali ini, aku ingin menyimpannya di sini.</p>
+      <a class="button" href="kenangan.html">Mari membuka kenangan <span aria-hidden="true">↗</span></a>
+      <p class="signature">dibuat dengan seluruh cinta, oleh anak perempuanmu</p>
+      <div class="corner-note">halaman kecil<br>untuk kalian ♡</div>
+    </section>
+
+    <section class="welcome section-wrap">
+      <div class="section-heading">
+        <p class="eyebrow">A NOTE BEFORE YOU BEGIN</p>
+        <h2>Sebelum membaca lebih jauh…</h2>
+      </div>
+      <div class="letter-card">
+        <p>Ma, Pa,</p>
+        <p>Aku mungkin tidak selalu pandai mengucapkan terima kasih. Ada begitu banyak hal yang baru kusadari setelah tumbuh sedikit lebih besar: doa-doa yang diam-diam kalian panjatkan, tenaga yang kalian keluarkan, dan cara kalian tetap berusaha memberikan yang terbaik.</p>
+        <p>Website kecil ini tidak akan pernah cukup untuk membalas semuanya. Tapi semoga, lewat halaman-halaman sederhana ini, kalian bisa melihat sedikit dari apa yang selama ini kusimpan di hati.</p>
+        <p class="signoff">Dengan sayang yang tidak habis-habis,<br>anak perempuan kalian.</p>
+      </div>
+    </section>
+
+    <section class="chapter-grid section-wrap">
+      <a class="chapter-card" href="kenangan.html">
+        <span class="chapter-number">01</span><span class="chapter-icon">▧</span>
+        <h3>Potongan waktu</h3><p>Foto-foto kecil dari perjalanan kita.</p><span class="text-link">Lihat kenangan ↗</span>
+      </a>
+      <a class="chapter-card" href="untuk-mama.html">
+        <span class="chapter-number">02</span><span class="chapter-icon">♡</span>
+        <h3>Untuk Mama</h3><p>Hal-hal yang ingin kusampaikan lebih sering.</p><span class="text-link">Buka surat ↗</span>
+      </a>
+      <a class="chapter-card" href="untuk-papa.html">
+        <span class="chapter-number">03</span><span class="chapter-icon">✉</span>
+        <h3>Untuk Papa</h3><p>Terima kasih untuk cinta yang sering hadir dalam tindakan.</p><span class="text-link">Buka surat ↗</span>
+      </a>
+      <a class="chapter-card" href="untuk-kalian.html">
+        <span class="chapter-number">04</span><span class="chapter-icon">✿</span>
+        <h3>Untuk kalian berdua</h3><p>Satu surat untuk rumah yang selalu kubawa.</p><span class="text-link">Baca penutup ↗</span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>made with love, always</span>
+    <span>untuk Mama & Papa · ♡</span>
+  </footer>
+  
+<div class="music-player">
+  <div class="music-info">
+    <span class="music-note">♫</span>
+    <div>
+      <strong>Photograph</strong>
+      <span>Ed Sheeran · a song for home</span>
+    </div>
+  </div>
+
+<audio id="background-music" loop preload="none">
+  <source src="music/photograph.mp3" type="audio/mpeg">
+</audio>
+
+<button class="music-toggle" id="music-toggle" type="button">
+  ♫ Putar Photograph
+</button>
+
+<script>
+  const music = document.getElementById("background-music");
+  const toggle = document.getElementById("music-toggle");
+
+  toggle.addEventListener("click", async () => {
+    if (music.paused) {
+      try {
+        await music.play();
+        toggle.textContent = "Ⅱ Jeda Musik";
+      } catch (error) {
+        toggle.textContent = "Musik gagal diputar";
+      }
+    } else {
+      music.pause();
+      toggle.textContent = "♫ Putar Photograph";
+    }
+  });
+</script>
+
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#e8dac7"/>
+  <rect x="28" y="28" width="744" height="544" fill="none" stroke="#bda58a" stroke-width="2" stroke-dasharray="8 10"/>
+  <g fill="#92765c" text-anchor="middle" font-family="Georgia, serif">
+    <text x="400" y="270" font-size="72">♡</text>
+    <text x="400" y="335" font-size="28">your photo goes here</text>
+    <text x="400" y="375" font-size="18">a little memory, kept forever</text>
+  </g>
+</svg>
